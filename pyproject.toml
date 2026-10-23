@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools==84.2.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jsonl-rescue"
+version = "0.1.0"
+description = "Lossless JSONL quarantine with bounded line reads and verified byte reassembly"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "KanadeK"}]
+dependencies = []
+keywords = ["jsonl", "ndjson", "quarantine", "data-ingestion", "offline"]
+
+[project.scripts]
+jsonl-rescue = "jsonl_rescue.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.coverage.run]
+source = ["jsonl_rescue"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 85
