@@ -14,6 +14,8 @@ Python 3.11 or newer. No runtime dependencies or service accounts.
 From a downloaded or cloned source checkout:
 
 ```console
+git clone https://github.com/KanadeK/jsonl-rescue.git
+cd jsonl-rescue
 python -m venv .venv
 ```
 

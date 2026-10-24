@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 (release candidate)
+## 0.1.0 — 2026-10-24
 
 - Split original bytes into accepted/rejected streams with an offset journal and SHA-256 manifest.
 - Reassemble only after file, offset, count and source-digest verification.
